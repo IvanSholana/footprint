@@ -22,9 +22,9 @@ background = get_base64("./media/background_min.jpg")
 icon2 = get_base64("./media/icon2.png")
 icon3 = get_base64("./media/icon3.png")
 
-with open("./style/style.css", "r") as style:
-    css=f"""<style>{style.read().format(background=background, icon2=icon2, icon3=icon3)}</style>"""
-    st.markdown(css, unsafe_allow_html=True)
+# with open("./style/style.css", "r") as style:
+#     css=f"""<style>{style.read().format(background=background, icon2=icon2, icon3=icon3)}</style>"""
+#     st.markdown(css, unsafe_allow_html=True)
 
 def script():
     with open("./style/scripts.js", "r", encoding="utf-8") as scripts:
